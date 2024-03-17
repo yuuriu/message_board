@@ -24,7 +24,7 @@ import javax.persistence.Table;
 
 public class Message {
     @Id
-    @Column(name = "Id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
@@ -60,7 +60,7 @@ public class Message {
         return content;
     }
 
-    public void set(String content) {
+    public void setContent(String content) {
         this.content = content;
     }
 
