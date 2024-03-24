@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:import url="../layout/app.jsp">
     <c:param name="content">
-        <c:shoose>
+        <c:choose>
             <c:when test="${message != null}">
                 <h2>id：${message.id}のメッセージ編集ページ</h2>
 
@@ -26,7 +26,7 @@
             <c:otherwise>
                 <h2>お探しのデータは見つかりませんでした。</h2>
             </c:otherwise>
-        </c:shoose>
+        </c:choose>
 
     </c:param>
 </c:import>
